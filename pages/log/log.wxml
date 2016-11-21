@@ -1,0 +1,13 @@
+<view clas="mainView">
+    <view class="body">
+        <view class="widget">
+            <block wx:for="{{pageNames}}" wx:key="item.id">
+                <view class="widgets__item">
+                    <navigator url="{{item.id}}/{{item.id}}">{{item.name}}</navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+
+</view>
+    

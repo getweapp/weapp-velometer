@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="flex-column speed">
+        <view>时速</view>
+        <view class="speed-data">0.00</view>
+        <view>km.h</view>
+    </view>
+
+    <view class="flex-column times">
+        <view>
+            <view>里程</view>
+            <view class="text-data">{{meters}}</view>
+            <view>km</view>
+        </view>
+        <view>
+            <view>时间</view>
+            <view class="text-data">{{time}}</view>
+            <view>h:m:s</view>
+        </view>
+        <view>
+            <view>均速</view>
+            <view class="text-data">{{time}}</view>
+            <view>km/h</view>
+        </view>
+    </view>
+
+    <view class="flex-column button-group">
+        <view class="btn btn-primary" bindtap="starRun">开始</view>
+        <view class="btn" bindtap="stopRun">暂停</view>
+    </view>
+</view>
